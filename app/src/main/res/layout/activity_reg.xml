@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.usersystemone.RegActivity">
+
+    <LinearLayout
+        android:id="@+id/userIdLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="User ID:" />
+
+        <EditText
+            android:id="@+id/userIdEditText"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:hint="Please input user ID" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/passwdLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/userIdLayout">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Password:" />
+
+        <EditText
+            android:layout_gravity="center_vertical"
+            android:id="@+id/passwdEditText"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:hint="Please input password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/companyLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwdLayout">
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/rember_passwd"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Company Name:" />
+
+        <EditText
+            android:id="@+id/companyEditText"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:hint="Please input Company Name" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/doRegButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="18sp"
+        android:layout_below="@id/companyLayout"
+        android:text="Register"/>
+
+
+</RelativeLayout>
