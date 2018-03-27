@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #btn{
+            width: 50px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>This is index.html</h1>
+<h1>Hello </h1><h1 id="userId"></h1>
+
+<button type="button" id="button1" onclick="hello('Hello Android)">Hello Android</button>
+
+<script type="text/javascript">
+
+        function hello(text){
+            AndroidWebView.showToast(text);
+
+        }
+
+        function world(text){
+            document.getElementById('userId').innerHTML = text;
+        }
+
+</script>
+</body>
+</html>

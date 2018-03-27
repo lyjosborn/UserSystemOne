@@ -94,7 +94,8 @@ public class LoginActivity extends BasicActivity {
                                     sharedPreferencesEditor.clear();
                                 }
                                 sharedPreferencesEditor.apply();
-                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
+                                intent.putExtra("userId", userId);
                                 startActivity(intent);
                                 finish();
                             } else {
